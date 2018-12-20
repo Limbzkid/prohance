@@ -1,0 +1,338 @@
+<!-- Popup contact us Address Starts -->
+<div class="overlay-contact"></div>
+<div class="pop-contact-wrp">
+	<div class="head-txt">
+		<h2>Address</h2>
+		<span class="cross-sign">?</span>
+	</div>
+	<div class="wrapper">
+		{{ page.message }}
+	</div>  
+</div>
+<!-- Popup contact us Address Ends -->
+<div id="rotator"></div>
+
+<header>
+	<div class="container-flow">
+		<div class="wrapper flex-wrp">
+			<div class="pro-logo">
+				<a href="/">
+					<img src="{{ file_url(node.field_product_logo.entity.field_logo_image.entity.uri.value) }}" alt="prohance-logo">
+                </a>
+			</div>
+			<div class="mob-menu">
+				<span></span>
+			</div>
+			<nav>
+				<ul class="flex-wrp main-menu">
+					{{ page.menu_left }}
+					{{ page.menu_right }}
+				</ul>   
+			</nav>
+		</div>
+	</div>
+</header>
+
+<main id="fullpage">
+	<!-- Section main-banner Starts -->
+	<section class="main-banner flex-wrp section show-banner">
+		<div class="scroll-down">
+			<p>SCROLL DOWN</p>
+			<span class="down-arr"><img src="/{{ directory }}/images/down-arr.png" alt="down-arrow"></span>
+		</div>
+		{% if node.title.value == 'Prohance' %}
+			<span class="petals petal1 bgpetals1"></span>
+			<span class="petals petal2 bgpetals2"></span>
+			<span class="petals petal3 bgpetals3"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance D' %}
+			<span class="petals petal1 bgpetals1"></span>
+			<span class="petals petal2 bgpetals2"></span>
+			<span class="petals petal3 bgpetals3"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance Mom' %}
+			<span class="petals petal1 bgpetals1"></span>
+			<span class="petals petal2 bgpetals2"></span>
+			<span class="petals petal3 bgpetals3"></span>
+		{% endif %}
+		
+		
+		<div class="container">
+			<div class="wrapper">
+				<div class="middle-wrp flex-wrp">
+					<div class="left-text">
+						{{ node.body.value | raw }}
+						<a href="{{ node.field_link.value }}">
+							<button type="button" class="exp-btn">Explore</button>
+						</a>
+					</div>
+					<div class="middle-img">
+						<div class="run-img">
+							<img src="{{ file_url(node.field_model_image.entity.uri.value) }}" alt="run">
+						</div>
+						<div class="bg-img">						
+							{% if node.title.value == 'Prohance' %}
+								<img src="/{{ directory }}/images/prohanceC/green-patch.png" alt="green-patch">
+							{% endif %}
+							{% if node.title.value == 'Prohance D' %}
+								<img src="/{{ directory }}/images/prohanceD/blue-patch.png" alt="blue-patch">
+							{% endif %}
+							{% if node.title.value == 'Prohance Mom' %}
+								<img src="/{{ directory }}/images/prohanceM/voilet-patch.png" alt="voilet-patch">
+							{% endif %}
+							<img src="{{ file_url(node.field_product_image.entity.uri.value) }}" alt="product" class="img-absolute">
+						</div>
+					</div>
+					<div class="right-text">
+						<ul class="pro-count owl-carousel">
+							{% for highlight in node.field_product_highlights %}
+								 <li>
+									<p><span class="cour-txt">{{ highlight.entity.field_value.value }}</span> {{ highlight.entity.field_unit.value }}</p>
+									<p class="reg-txt">{{ highlight.entity.field_text.value }}</p>
+								 </li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section main-banner Ends -->
+
+
+	<!-- Section product-property Starts -->
+	<section class="section main-banner flex-wrp product-property">
+		{% if node.title.value == 'Prohance' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance D' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance Mom' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		<div class="container">
+			<div class="wrapper">
+				<div class="middle-wrp flex-wrp">
+					<div class="left-text left-animate">
+						<div class="head-txt">
+							<h2>What it is</h2>
+							<span class="arrows1"><img src="/{{ directory }}/images/prohanceD/arrows.png" alt="arrow"></span>
+						</div>
+						<div class="pro-desc">
+							{{ node.field_what_it_is.value | raw }}
+							<ul class="pro-count pro-contents">
+								{% for highlight in node.field_nutrient_supplements %}
+									<li>
+										<div class="pro-speciality flex-wrp">
+											<img src="{{ file_url(highlight.entity.field_product_image.entity.uri.value) }}" alt="{{ highlight.entity.field_title.value }}">
+											<p>{{ highlight.entity.field_title.value }}</p>
+										</div>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div class="middle-img">
+						<div class="bg-img">
+							<img src="{{ file_url(node.field_splash_image.entity.uri.value) }}" alt="water-patch" class="water-patch">
+							<img src="{{ file_url(node.field_product_image.entity.uri.value) }}" alt="product" class="img-absolute">
+						</div>
+					</div>
+					<div class="right-text right-animate">
+						<div class="head-txt">
+							<h2>Why use it</h2>
+							<span class="arrows2"><img src="/{{ directory }}/images/prohanceD/arrows.png" alt="arrow"></span>
+						</div>
+						<div class="pro-desc">{{ node.field_why_use_it.value | raw }} </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section product-property Ends -->
+
+
+	<!-- Section benefits Starts -->
+	<section class="section main-banner flex-wrp product-property benefits">
+		{% if node.title.value == 'Prohance' %}
+			<span class="petals petal1 bgpetals-flw"></span>
+            <span class="petals petal2 bgpetals2"></span>
+            <span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal5 bgpetals5"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance D' %}
+			<span class="petals petal1 bgpetals-flw"></span>
+            <span class="petals petal2 bgpetals2"></span>
+            <span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal5 bgpetals5"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance Mom' %}
+			<span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal1 bgpetals4"></span>
+            <span class="petals petal2 bgpetals3"></span>
+            <span class="petals petal5 bgpetals2"></span>
+		{% endif %}
+		<div class="container">
+			<div class="wrapper">
+				<div class="head-txt"><h2>Benefits</h2></div>
+				<div class="middle-wrp flex-wrp">
+					<div class="left-text top-animate">
+						<div class="pro-desc">
+							<span class="arrows3 left-animate">
+								<img src="/{{ directory }}/images/prohanceD/arrows.png" alt="arrow">
+							</span>
+							<ul class="pro-count pro-contents">
+								{% set count = 1 %} 
+								{% for item in node.field_benefits %}
+									{% if count > 2%}
+										</ul>
+									</div>
+								</div>
+								<div class="middle-img">
+									<div class="bg-img">
+										<img src="{{ file_url(node.field_product_image.entity.uri.value) }}" alt="product" class="img-absolute">
+									</div>
+								</div>
+								<div class="right-text bottom-animate">
+									<div class="pro-desc">
+										<span class="arrows3">
+											<img src="/{{ directory }}/images/prohanceD/arrows.png" alt="arrow">
+										</span>
+										<ul class="pro-count pro-contents">
+											<li>
+											<div class="pro-speciality flex-wrp">
+												<img src="{{ file_url(item.entity.field_product_image.entity.uri.value) }}" alt="nutrition">
+												<p>{{ item.entity.field_title.value }}</p>
+											</div>
+										</li>
+										{% set count = 0 %}
+									
+									{% else %}
+										<li>
+											<div class="pro-speciality flex-wrp">
+												<img src="{{ file_url(item.entity.field_product_image.entity.uri.value) }}" alt="nutrition">
+												<p>{{ item.entity.field_title.value }}</p>
+											</div>
+										</li>
+									{% endif %}
+									{% set count = count + 1 %}
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section benefits Ends -->
+
+
+	<!-- Section video-scoop Starts -->
+	<section class="section video-scoop">		
+		{% if node.title.value == 'Prohance' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance D' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance Mom' %}
+			<span class="petals big-petal bgpetals-big"></span>
+		{% endif %}
+		
+		<div class="container-flow">
+			<div class="wrapper">
+				<div class="video-wrp">
+					<iframe src="https://www.youtube.com/embed/{{ node.field_youtube_id.value }}?rel=0&amp;controls=0&amp;showinfo=0" data-autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    
+				</div>
+				<div class="container">
+					<div class="video-txt">
+						<div class="head-txt">
+							<h2>Scoop, stir, sip!</h2>
+						</div>
+						<div class="pro-desc">
+							{{ node.field_description.value | raw }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section video-scoop Ends -->
+
+
+	<!-- Section health Starts -->
+	<section class="section main-banner health flex-wrp">
+		{% if node.title.value == 'Prohance' %}
+			<span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal5 bgpetals5"></span> 
+            <span class="petals petal6 bgpetals6"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance D' %}
+			<span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal5 bgpetals5"></span> 
+            <span class="petals petal6 bgpetals6"></span>
+		{% endif %}
+		{% if node.title.value == 'Prohance Mom' %}
+			<span class="petals big-petal bgpetals-big"></span>
+            <span class="petals petal5 bgpetals4"></span> 
+            <span class="petals petal6 bgpetals5"></span>
+		{% endif %}
+		
+		<div class="container">
+			<div class="wrapper">
+				<div class="middle-wrp flex-wrp">
+					<div class="left-text left-animate">
+						<div class="run-img">
+							<img src="{{ file_url(node.field_btm_model_image.entity.uri.value )}}" alt="health">
+						</div>
+					</div>
+					<div class="middle-img">
+						<div class="bg-img">
+							<img src="{{ file_url(node.field_btm_product_image.entity.uri.value ) }}" alt="glass-patch">
+						</div>
+					</div>
+					<div class="right-text right-animate">
+						<div class="head-txt">
+							<h2><span>Your health,</span> in your hands</h2>
+						</div>
+						<div class="pro-desc">
+							{{ node.field_bottom_description.value | raw }}
+							<div class="btn-wrp">
+								<a href="{{ node.field_explore_link.value }}"><button type="button" class="exp-btn">Explore</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section health Ends -->
+
+</main>
+{{ page.footer_top }}
+<footer>
+  <div class="container-flow">
+    <div class="wrapper flex-wrp">
+      <div class="copy flex-wrp">
+        <p class="copyright">Copyright &copy; Sun Pharmaceutical Industries Ltd. </p>
+        <ul class="flex-wrp">
+          {{ page.footer }}
+        </ul>
+      </div>
+      <div class="subs-wrp">
+        <ul class="flex-wrp">
+          <li><a href="javascript:;">subscribe</a></li>
+          <li><a href="javascript:;">unbscribe</a></li>
+        </ul>
+      </div>
+      <div class="social-wrp">
+        <ul class="flex-wrp">
+			<li><a href="https://www.facebook.com/Sun-Pharma-170795602978664/" target="_blank"><img src="/{{ directory }}/images/fb.png" alt="fb"></a></li>
+			<li><a href="https://twitter.com/SunPharma_live" target="_blank"><img src="/{{ directory }}/images/tw.png" alt="tw"></a></li>
+			<li><a href="https://www.youtube.com/channel/UCdkyfWmDFAaUA5P8GD_LVdQ" target="_blank"><img src="/{{ directory }}/images/yt.png" alt="yt"></a></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</footer>

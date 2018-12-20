@@ -1,0 +1,8 @@
+custom_pages.recipes:
+  path: '/ajax/get-recipes'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::get_recipes'
+    _title: 'Recipes'
+  requirements:
+    _permission: 'access content'
+

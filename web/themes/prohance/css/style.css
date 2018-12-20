@@ -1,0 +1,2213 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.ttf"), url("../fonts/ProximaNova-Regular.eot"), url("../fonts/ProximaNova-Regular.woff"), url("../fonts/ProximaNova-Regular.woff2"), url("../fonts/ProximaNova-Regular.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.ttf"), url("../fonts/ProximaNova-Light.eot"), url("../fonts/ProximaNova-Light.woff"), url("../fonts/ProximaNova-Light.woff2"), url("../fonts/ProximaNova-Light.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.ttf"), url("../fonts/ProximaNova-Semibold.eot"), url("../fonts/ProximaNova-Semibold.woff"), url("../fonts/ProximaNova-Semibold.woff2"), url("../fonts/ProximaNova-Semibold.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.ttf"), url("../fonts/ProximaNova-Bold.eot"), url("../fonts/ProximaNova-Bold.woff"), url("../fonts/ProximaNova-Bold.woff2"), url("../fonts/ProximaNova-Bold.svg");
+}
+
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../fonts/Courgette-Regular.ttf"), url("../fonts/Courgette-Regular.eot"), url("../fonts/Courgette-Regular.woff"), url("../fonts/Courgette-Regular.woff2"), url("../fonts/Courgette-Regular.svg");
+}
+
+/* line 59, ../scss/_base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 69, ../scss/_base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 72, ../scss/_base/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 75, ../scss/_base/_reset.scss */
+body {
+  line-height: 1;
+  color: #414042;
+  font-family: "ProximaNova-Regular";
+  counter-reset: number;
+}
+
+/* line 81, ../scss/_base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 84, ../scss/_base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 88, ../scss/_base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 92, ../scss/_base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 96, ../scss/_base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 99, ../scss/_base/_reset.scss */
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+}
+
+/* line 100, ../scss/_base/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 101, ../scss/_base/_reset.scss */
+input, button, select, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  font-family: "ProximaNova-Regular";
+}
+
+/*-----------------Default Starts-----------------*/
+/* line 3, ../scss/_base/_default.scss */
+main {
+  position: relative;
+}
+
+/* line 6, ../scss/_base/_default.scss */
+.flex-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 17, ../scss/_base/_default.scss */
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* line 24, ../scss/_base/_default.scss */
+.container-flow {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 28, ../scss/_base/_default.scss */
+section {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+}
+/* line 32, ../scss/_base/_default.scss */
+section.health {
+  padding-bottom: 0;
+}
+
+/* line 36, ../scss/_base/_default.scss */
+.owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* line 43, ../scss/_base/_default.scss */
+.owl-dots button.owl-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+/* line 50, ../scss/_base/_default.scss */
+.owl-dots button.owl-dot.active {
+  background-color: #82339d;
+}
+
+/*-----------------Default Ends-----------------*/
+/*-----------------Button Starts-----------------*/
+/* line 62, ../scss/_base/_default.scss */
+button.exp-btn {
+  font-family: "Courgette-Regular";
+  font-size: 1.6rem;
+  color: white;
+  padding: 7px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3160ad;
+  margin: 20px 0;
+}
+
+/* line 72, ../scss/_base/_default.scss */
+button.view-btn {
+  color: #3160ad;
+  background-color: #fff !important;
+}
+
+/* line 76, ../scss/_base/_default.scss */
+.load-wrp {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 79, ../scss/_base/_default.scss */
+.load-wrp input {
+  padding: 15px 25px;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+/* line 86, ../scss/_base/_default.scss */
+.load-wrp input:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/*-----------------Button Ends-----------------*/
+/*-----------------Text Starts-----------------*/
+/* line 96, ../scss/_base/_default.scss */
+.head-txt {
+  position: relative;
+}
+/* line 98, ../scss/_base/_default.scss */
+.head-txt h2 {
+  font-family: "Courgette-Regular";
+  font-size: 6rem;
+  color: #3160ad;
+  padding: 20px 0;
+}
+
+/* line 105, ../scss/_base/_default.scss */
+.para-txt {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Regular";
+  line-height: 27px;
+}
+
+/*-----------------Text Ends-----------------*/
+/*-----------------pro Count Ends-----------------*/
+/* line 115, ../scss/_base/_default.scss */
+ul.pro-count {
+  display: block;
+}
+/* line 117, ../scss/_base/_default.scss */
+ul.pro-count li {
+  color: #3160ad;
+  padding: 20px 0;
+  border-bottom: 1px solid #a6ecf8;
+  line-height: 30px;
+}
+/* line 122, ../scss/_base/_default.scss */
+ul.pro-count li:last-child {
+  border: none !important;
+}
+/* line 125, ../scss/_base/_default.scss */
+ul.pro-count li p {
+  font-size: 3rem;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 129, ../scss/_base/_default.scss */
+ul.pro-count li .cour-txt {
+  font-family: "Courgette-Regular";
+  font-size: 4rem;
+}
+/* line 133, ../scss/_base/_default.scss */
+ul.pro-count li .reg-txt {
+  font-family: "ProximaNova-Regular";
+  font-size: 2rem;
+}
+
+/*-----------------pro Count Ends-----------------*/
+/*-----------------Pro Contents Starts-----------------*/
+/* line 144, ../scss/_base/_default.scss */
+ul.pro-contents li p {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Bold";
+  margin-left: 20px;
+}
+/* line 149, ../scss/_base/_default.scss */
+ul.pro-contents .pro-speciality {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+/* line 153, ../scss/_base/_default.scss */
+ul.pro-contents .pro-speciality p {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Bold";
+  margin-left: 20px;
+  line-height: 25px;
+}
+
+/*-----------------Pro Contents Ends-----------------*/
+/*-----------------Pro Contents Ends-----------------*/
+/* line 165, ../scss/_base/_default.scss */
+.petals {
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 169, ../scss/_base/_default.scss */
+.petal1 {
+  left: 7%;
+  top: 15%;
+}
+
+/* line 173, ../scss/_base/_default.scss */
+.bgpetals1 {
+  background: url(../images/prohanceD/petal1.png);
+  width: 163px;
+  height: 166px;
+  background-size: cover;
+}
+
+/* line 179, ../scss/_base/_default.scss */
+.bgpetals2 {
+  background: url(../images/prohanceD/petal2.png);
+  width: 56px;
+  height: 73px;
+  background-size: cover;
+}
+
+/* line 185, ../scss/_base/_default.scss */
+.bgpetals3 {
+  background: url(../images/prohanceD/petal3.png);
+  width: 60px;
+  height: 75px;
+  background-size: cover;
+}
+
+/* line 191, ../scss/_base/_default.scss */
+.bgpetals5 {
+  background: url(../images/prohanceD/petal5.png);
+  width: 76px;
+  height: 72px;
+  background-size: cover;
+}
+
+/* line 197, ../scss/_base/_default.scss */
+.bgpetals6 {
+  background: url(../images/prohanceD/petal6.png);
+  width: 156px;
+  height: 166px;
+  background-size: cover;
+}
+
+/* line 203, ../scss/_base/_default.scss */
+.bgpetals-big {
+  background: url(../images/prohanceD/petal3.png);
+  width: 205px;
+  height: 228px;
+  background-size: cover;
+}
+
+/* line 209, ../scss/_base/_default.scss */
+.bgpetals-flw {
+  background: url(../images/prohanceD/petal1-flw.png);
+  width: 111px;
+  height: 96px;
+  background-size: cover;
+}
+
+/* line 216, ../scss/_base/_default.scss */
+.petal2 {
+  left: 20%;
+  top: 85%;
+}
+
+/* line 220, ../scss/_base/_default.scss */
+.petal3 {
+  left: 75%;
+  top: 20%;
+}
+
+/* line 224, ../scss/_base/_default.scss */
+.big-petal {
+  left: 65%;
+  top: -10%;
+}
+
+/* line 228, ../scss/_base/_default.scss */
+.petal5 {
+  left: 75%;
+  top: 90%;
+}
+
+/* line 232, ../scss/_base/_default.scss */
+.petal6 {
+  left: 0;
+  top: 70%;
+}
+
+/*-----------------Pro Contents Ends-----------------*/
+/*-----------------Themes Starts-----------------*/
+/* line 241, ../scss/_base/_default.scss */
+.green-theme button.exp-btn {
+  background-color: #047c2a;
+}
+/* line 248, ../scss/_base/_default.scss */
+.green-theme .head-txt h2, .green-theme ul.pro-contents .pro-speciality p, .green-theme ul.pro-count li,
+.green-theme section.video-scoop .video-txt .head-txt h2,
+.green-theme section.product-tabs .tabs ul li.active,
+.green-theme section.faq .question-wrp .quertions, .green-theme section.faq .question-wrp .answers:before,
+.green-theme .inner-product .highlight, .green-theme .inner-product .buy-btn p {
+  color: #047c2a;
+}
+/* line 251, ../scss/_base/_default.scss */
+.green-theme ul.pro-count li {
+  border-bottom: 1px solid #85b836;
+}
+/* line 256, ../scss/_base/_default.scss */
+.green-theme section.ingredients .advantages-info .owl-dots button.owl-dot.active,
+.green-theme section.faq .question-wrp .quest-txt .drop-sign,
+.green-theme section.ingredients .ingredient-wrp h3:before {
+  background-color: #047c2a;
+}
+/* line 260, ../scss/_base/_default.scss */
+.green-theme section.video-scoop .video-txt {
+  color: black;
+}
+/* line 263, ../scss/_base/_default.scss */
+.green-theme section.main-banner, .green-theme section.green {
+  background: linear-gradient(to bottom, #e7f5d2, #ccdfa9);
+}
+/* line 266, ../scss/_base/_default.scss */
+.green-theme section.product-property {
+  background: white;
+}
+/* line 269, ../scss/_base/_default.scss */
+.green-theme section.benefits, .green-theme section.brownish {
+  background: linear-gradient(to bottom, #fffdf3, #f4edc6);
+}
+/* line 271, ../scss/_base/_default.scss */
+.green-theme section.benefits h3, .green-theme section.brownish h3 {
+  color: #047c2a !important;
+}
+/* line 278, ../scss/_base/_default.scss */
+.green-theme .tabs-dropdown {
+  color: #047c2a !important;
+}
+/* line 281, ../scss/_base/_default.scss */
+.green-theme .bgpetals1 {
+  background: url(../images/prohanceD/petal1.png);
+  width: 163px;
+  height: 166px;
+  background-size: cover;
+}
+/* line 287, ../scss/_base/_default.scss */
+.green-theme .bgpetals2 {
+  background: url(../images/prohanceD/petal2.png);
+  width: 56px;
+  height: 73px;
+  background-size: cover;
+}
+/* line 293, ../scss/_base/_default.scss */
+.green-theme .bgpetals3 {
+  background: url(../images/prohanceD/petal3.png);
+  width: 60px;
+  height: 75px;
+  background-size: cover;
+}
+/* line 299, ../scss/_base/_default.scss */
+.green-theme .bgpetals5 {
+  background: url(../images/prohanceD/petal5.png);
+  width: 76px;
+  height: 72px;
+  background-size: cover;
+}
+/* line 305, ../scss/_base/_default.scss */
+.green-theme .bgpetals6 {
+  background: url(../images/prohanceD/petal6.png);
+  width: 156px;
+  height: 166px;
+  background-size: cover;
+}
+/* line 311, ../scss/_base/_default.scss */
+.green-theme .bgpetals-big {
+  background: url(../images/prohanceD/petal3.png);
+  width: 205px;
+  height: 228px;
+  background-size: cover;
+}
+/* line 317, ../scss/_base/_default.scss */
+.green-theme .bgpetals-flw {
+  background: url(../images/prohanceD/petal1-flw.png);
+  width: 111px;
+  height: 96px;
+  background-size: cover;
+}
+
+/* line 330, ../scss/_base/_default.scss */
+.voilet-theme header ul.main-menu li:after {
+  background: -webkit-gradient(linear, left top, right top, from(#fec5d3), to(#ac4bca));
+  background: linear-gradient(-270deg, #fec5d3, #ac4bca);
+}
+/* line 337, ../scss/_base/_default.scss */
+.voilet-theme button.exp-btn {
+  background-color: #82339d;
+}
+/* line 344, ../scss/_base/_default.scss */
+.voilet-theme .head-txt h2, .voilet-theme ul.pro-contents .pro-speciality p, .voilet-theme ul.pro-count li,
+.voilet-theme section.video-scoop .video-txt .head-txt h2,
+.voilet-theme section.product-tabs .tabs ul li.active,
+.voilet-theme section.faq .question-wrp .quertions, .voilet-theme section.faq .question-wrp .answers:before,
+.voilet-theme .inner-product .highlight, .voilet-theme .inner-product .buy-btn p {
+  color: #82339d;
+}
+/* line 347, ../scss/_base/_default.scss */
+.voilet-theme ul.pro-count li {
+  border-bottom: 1px solid #f3b5c5;
+}
+/* line 353, ../scss/_base/_default.scss */
+.voilet-theme section.ingredients .advantages-info .owl-dots button.owl-dot.active,
+.voilet-theme section.faq .question-wrp .quest-txt .drop-sign,
+.voilet-theme section.ingredients .ingredient-wrp h3:before {
+  background-color: #82339d;
+}
+/* line 357, ../scss/_base/_default.scss */
+.voilet-theme section.video-scoop .video-txt {
+  color: black;
+}
+/* line 360, ../scss/_base/_default.scss */
+.voilet-theme section.main-banner, .voilet-theme section.voilet {
+  background: linear-gradient(to bottom, #fee7ed, #f1cbd5);
+}
+/* line 362, ../scss/_base/_default.scss */
+.voilet-theme section.main-banner h3, .voilet-theme section.voilet h3 {
+  color: #82339d !important;
+}
+/* line 366, ../scss/_base/_default.scss */
+.voilet-theme section.product-property {
+  background: white;
+}
+/* line 369, ../scss/_base/_default.scss */
+.voilet-theme section.benefits {
+  background: linear-gradient(to bottom, #feeee8, #f6dbce);
+}
+/* line 375, ../scss/_base/_default.scss */
+.voilet-theme .tabs-dropdown {
+  color: #82339d !important;
+}
+/* line 379, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals1 {
+  background: url(../images/prohanceM/chocolate1.png);
+  width: 243px;
+  height: 133px;
+  background-size: cover;
+}
+/* line 385, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals2 {
+  background: url(../images/prohanceM/chocolate2.png);
+  width: 56px;
+  height: 56px;
+  background-size: cover;
+}
+/* line 391, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals3 {
+  background: url(../images/prohanceM/chocolate3.png);
+  width: 71px;
+  height: 50px;
+  background-size: cover;
+}
+/* line 397, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals4 {
+  background: url(../images/prohanceM/chocolate4.png);
+  width: 80px;
+  height: 64px;
+  background-size: cover;
+}
+/* line 403, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals5 {
+  background: url(../images/prohanceM/chocolate5.png);
+  width: 131px;
+  height: 156px;
+  background-size: cover;
+}
+/* line 409, ../scss/_base/_default.scss */
+.voilet-theme .bgpetals-big {
+  background: url(../images/prohanceM/big-chocolate.png);
+  width: 207px;
+  height: 124px;
+  background-size: cover;
+}
+
+/*-----------------Themes Ends-----------------*/
+/*-----------------Scroll Down Starts-----------------*/
+/* line 420, ../scss/_base/_default.scss */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 5%;
+  font-family: "ProximaNova-Semibold";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 429, ../scss/_base/_default.scss */
+.scroll-down span {
+  display: inline-block;
+  margin-top: 10px;
+  position: relative;
+  animation: down-anim 0.5s infinite alternate;
+}
+
+@keyframes down-anim {
+  /* line 438, ../scss/_base/_default.scss */
+  0% {
+    transform: translateY(80%);
+  }
+
+  /* line 441, ../scss/_base/_default.scss */
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+/*-----------------Scroll Down Ends-----------------*/
+/*-----------------PopUp ViewCharts Starts-----------------*/
+/* line 449, ../scss/_base/_default.scss */
+.pop-wrp {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 80%;
+  display: none;
+}
+/* line 460, ../scss/_base/_default.scss */
+.pop-wrp .wrapper {
+  height: 550px;
+  overflow-y: auto;
+}
+/* line 463, ../scss/_base/_default.scss */
+.pop-wrp .wrapper table {
+  width: 100%;
+}
+/* line 467, ../scss/_base/_default.scss */
+.pop-wrp .head-txt h2 {
+  font-size: 5rem;
+  position: relative;
+}
+
+/* line 472, ../scss/_base/_default.scss */
+.pop-contact-wrp {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  max-width: 450px;
+  width: 100%;
+  display: none;
+}
+/* line 484, ../scss/_base/_default.scss */
+.pop-contact-wrp .wrapper {
+  height: 200px;
+  overflow-y: auto;
+}
+/* line 487, ../scss/_base/_default.scss */
+.pop-contact-wrp .wrapper p {
+  font-size: 2rem;
+}
+/* line 491, ../scss/_base/_default.scss */
+.pop-contact-wrp .head-txt h2 {
+  font-size: 5rem;
+  position: relative;
+}
+
+/* line 496, ../scss/_base/_default.scss */
+.cross-sign {
+  width: 30px;
+  height: 30px;
+  font-size: 21px;
+  background-color: #3160ad;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+/* line 511, ../scss/_base/_default.scss */
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: none;
+}
+
+/* line 521, ../scss/_base/_default.scss */
+.overlay-contact {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: none;
+}
+
+/*-----------------PopUp ViewCharts Ends-----------------*/
+/*-----------------Table Starts-----------------*/
+/* line 535, ../scss/_base/_default.scss */
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 536, ../scss/_base/_default.scss */
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+/* line 537, ../scss/_base/_default.scss */
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+/* line 538, ../scss/_base/_default.scss */
+.tg .tg-x5oc {
+  background-color: #f4b083;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* line 539, ../scss/_base/_default.scss */
+.tg .tg-e76x {
+  background-color: #f4b083;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 540, ../scss/_base/_default.scss */
+.tg .tg-d52n {
+  background-color: #e2efd9;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+/* line 541, ../scss/_base/_default.scss */
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 542, ../scss/_base/_default.scss */
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+/*-----------------Table Ends-----------------*/
+/*-----------------Header Starts-----------------*/
+/* line 2, ../scss/_base/_common.scss */
+header {
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+/* line 10, ../scss/_base/_common.scss */
+header .wrapper {
+  padding: 20px 0;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+/* line 18, ../scss/_base/_common.scss */
+header .pro-logo {
+  width: 177px;
+  padding: 10px 0;
+  margin-right: 50px;
+}
+/* line 25, ../scss/_base/_common.scss */
+header nav {
+  width: 100%;
+}
+/* line 27, ../scss/_base/_common.scss */
+header nav ul.main-menu {
+  max-width: 400px;
+  width: 100%;
+}
+/* line 30, ../scss/_base/_common.scss */
+header nav ul.main-menu li {
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
+/* line 35, ../scss/_base/_common.scss */
+header nav ul.main-menu li:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#c3e88c), to(#047c2a));
+  background: linear-gradient(-270deg, #c3e88c, #047c2a);
+  bottom: 4px;
+  left: 0;
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 47, ../scss/_base/_common.scss */
+header nav ul.main-menu li:hover:after {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 51, ../scss/_base/_common.scss */
+header nav ul.main-menu li.main-logo:after {
+  display: none;
+}
+/* line 57, ../scss/_base/_common.scss */
+header nav ul.main-menu li.main-logo img {
+  width: 100%;
+}
+/* line 61, ../scss/_base/_common.scss */
+header nav ul.main-menu li a {
+  color: #414042;
+  font-family: "ProximaNova-Semibold";
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/*-----------------Header Ends-----------------*/
+/*-----------------Product Starts-----------------*/
+/* line 79, ../scss/_base/_common.scss */
+.bg-img > .img-absolute {
+  display: block;
+  width: 55% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* line 88, ../scss/_base/_common.scss */
+.bg-img.active {
+  /* transform: scale(1); */
+  animation: bounce 0.8s;
+  -webkit-animation: bounce 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce {
+  /* line 97, ../scss/_base/_common.scss */
+  0% {
+    transform: scale(0.2);
+  }
+
+  /* line 98, ../scss/_base/_common.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 99, ../scss/_base/_common.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  /* line 103, ../scss/_base/_common.scss */
+  0% {
+    transform: scale(0.2);
+  }
+
+  /* line 104, ../scss/_base/_common.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 105, ../scss/_base/_common.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 108, ../scss/_base/_common.scss */
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+/* line 120, ../scss/_base/_common.scss */
+#rotator {
+  width: 300px;
+  height: 420px;
+  background: transparent url(../images/final-sprite.png) no-repeat 0 0;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  animation: productAnim 6s infinite;
+  -webkit-animation: productAnim 6s infinite;
+  z-index: 1;
+}
+/* line 131, ../scss/_base/_common.scss */
+#rotator:after {
+  background: url(../images/shadow.png) 0 0;
+  content: "";
+  width: 195px;
+  height: 41px;
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadowAnim 6s infinite;
+  -webkit-animation: shadowAnim 6s infinite;
+  z-index: 81;
+  position: absolute;
+}
+
+@-webkit-keyframes productAnim {
+  /* line 146, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 147, ../scss/_base/_common.scss */
+  50% {
+    margin-top: 25px;
+  }
+
+  /* line 148, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes productAnim {
+  /* line 151, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 152, ../scss/_base/_common.scss */
+  50% {
+    margin-top: 25px;
+  }
+
+  /* line 153, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes shadowAnim {
+  /* line 156, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 157, ../scss/_base/_common.scss */
+  50% {
+    margin-top: -40px;
+  }
+
+  /* line 158, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes shadowAnim {
+  /* line 161, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 162, ../scss/_base/_common.scss */
+  50% {
+    margin-top: -40px;
+  }
+
+  /* line 163, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+/*-----------------Product Ends-----------------*/
+/*-----------------Landing Page Starts-----------------*/
+/* line 170, ../scss/_base/_common.scss */
+section.product .landing-desc {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Regular";
+  text-align: center;
+  top: -100px;
+  position: relative;
+}
+/* line 176, ../scss/_base/_common.scss */
+section.product .landing-desc .bold {
+  font-family: "ProximaNova-Bold";
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+/* line 184, ../scss/_base/_common.scss */
+section.product a:hover .link-arr {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 191, ../scss/_base/_common.scss */
+.product-wrp {
+  position: relative;
+}
+/* line 199, ../scss/_base/_common.scss */
+.product-wrp .bg-img .link-arr {
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 33%;
+  transition: 0.5s;
+}
+/* line 205, ../scss/_base/_common.scss */
+.product-wrp .bg-img .link-arr img {
+  width: inherit;
+}
+/* line 210, ../scss/_base/_common.scss */
+.product-wrp img {
+  width: 100%;
+}
+/* line 213, ../scss/_base/_common.scss */
+.product-wrp .model-img {
+  position: absolute;
+  left: 3%;
+}
+/* line 217, ../scss/_base/_common.scss */
+.product-wrp .product-img {
+  max-width: 175px;
+  width: 100%;
+  position: absolute;
+  right: -8%;
+  bottom: -15%;
+  animation: product-anim 2s linear infinite alternate;
+}
+/* line 224, ../scss/_base/_common.scss */
+.product-wrp .product-img:after {
+  background: url(../images/shadow.png) no-repeat center center;
+  content: "";
+  background-size: contain;
+  width: 100%;
+  height: 41px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadowAnim1 4s infinite alternate-reverse;
+  -webkit-animation: shadowAnim1 4s infinite alternate-reverse;
+  z-index: 2;
+  position: absolute;
+}
+
+@keyframes product-anim {
+  /* line 242, ../scss/_base/_common.scss */
+  0% {
+    bottom: -10%;
+  }
+
+  /* line 246, ../scss/_base/_common.scss */
+  100% {
+    bottom: -5%;
+  }
+}
+
+@keyframes shadowAnim1 {
+  /* line 252, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+    bottom: -40px;
+  }
+
+  /* line 256, ../scss/_base/_common.scss */
+  50% {
+    bottom: -60px;
+    width: 80%;
+  }
+
+  /* line 261, ../scss/_base/_common.scss */
+  100% {
+    bottom: -40px;
+  }
+}
+
+/*-----------------Landing Page Ends-----------------*/
+/*-----------------Inner Page Starts-----------------*/
+/* line 270, ../scss/_base/_common.scss */
+.inner-product {
+  background: linear-gradient(to bottom, #e8fafd, #b5e0e7);
+}
+/* line 273, ../scss/_base/_common.scss */
+.inner-product .pro-slides .para-txt {
+  font-size: 1.4rem;
+  line-height: 18px;
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+/* line 280, ../scss/_base/_common.scss */
+.inner-product .wrapper {
+  align-items: inherit;
+}
+/* line 283, ../scss/_base/_common.scss */
+.inner-product .highlight {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Bold";
+  color: #3160ad;
+}
+/* line 288, ../scss/_base/_common.scss */
+.inner-product ul.pro-count {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* line 292, ../scss/_base/_common.scss */
+.inner-product ul.pro-count li {
+  margin-right: 50px;
+}
+/* line 296, ../scss/_base/_common.scss */
+.inner-product ul.pro-count li:last-child {
+  width: 100%;
+}
+/* line 299, ../scss/_base/_common.scss */
+.inner-product .pro-cart {
+  width: 50%;
+  position: relative;
+}
+/* line 303, ../scss/_base/_common.scss */
+.inner-product .product-carousel {
+  transform: rotate(90deg);
+  max-width: 350px;
+  width: 100%;
+  position: absolute;
+  left: -300px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+/* line 311, ../scss/_base/_common.scss */
+.inner-product .product-carousel .owl-item {
+  transform: rotate(-90deg);
+}
+/* line 314, ../scss/_base/_common.scss */
+.inner-product .product-carousel .pro-slides {
+  text-align: center;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 320, ../scss/_base/_common.scss */
+.inner-product .product-carousel .pro-slides img {
+  cursor: pointer;
+}
+/* line 325, ../scss/_base/_common.scss */
+.inner-product .product-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+/* line 334, ../scss/_base/_common.scss */
+.inner-product .product-carousel .owl-nav button span {
+  font-size: 70px;
+}
+/* line 339, ../scss/_base/_common.scss */
+.inner-product .product-desc {
+  display: none;
+}
+/* line 341, ../scss/_base/_common.scss */
+.inner-product .product-desc.active {
+  display: block;
+}
+/* line 344, ../scss/_base/_common.scss */
+.inner-product .product-desc .para-txt {
+  margin-bottom: 20px;
+}
+/* line 348, ../scss/_base/_common.scss */
+.inner-product .product-wrp .product-img {
+  max-width: 235px;
+  left: 10%;
+  right: inherit;
+}
+/* line 353, ../scss/_base/_common.scss */
+.inner-product .product-buy {
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 357, ../scss/_base/_common.scss */
+.inner-product .product-buy .product-img .prod-img {
+  display: none;
+}
+/* line 359, ../scss/_base/_common.scss */
+.inner-product .product-buy .product-img .prod-img.active {
+  display: block;
+}
+/* line 365, ../scss/_base/_common.scss */
+.inner-product .buy-btn {
+  margin-top: 100px;
+  text-align: center;
+}
+/* line 368, ../scss/_base/_common.scss */
+.inner-product .buy-btn p {
+  font-family: "ProximaNova-Bold";
+  font-size: 2.6rem;
+  color: #3160ad;
+  margin-bottom: 30px;
+}
+/* line 375, ../scss/_base/_common.scss */
+.inner-product button.exp-btn {
+  padding: 10px 65px;
+  font-size: 2rem;
+}
+
+/* line 382, ../scss/_base/_common.scss */
+section.product-tabs .tabs-dropdown {
+  display: none;
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  background: #fff;
+  color: #3160ad;
+  font-family: "Courgette-Regular";
+  font-size: 2.4rem;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px #ddd;
+  border-radius: 10px;
+}
+/* line 394, ../scss/_base/_common.scss */
+section.product-tabs .tabs-dropdown:before {
+  content: '';
+  height: 8px;
+  width: 8px;
+  display: block;
+  border: 3px solid #666;
+  border-right-width: 0;
+  border-top-width: 0;
+  top: 50%;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
+  position: absolute;
+  right: 15px;
+  margin-top: -3px;
+}
+/* line 410, ../scss/_base/_common.scss */
+section.product-tabs .tabs {
+  margin: 40px 0;
+}
+/* line 412, ../scss/_base/_common.scss */
+section.product-tabs .tabs ul {
+  font-family: "Courgette-Regular";
+  font-size: 3rem;
+  color: #000;
+}
+/* line 416, ../scss/_base/_common.scss */
+section.product-tabs .tabs ul li {
+  cursor: pointer;
+}
+/* line 418, ../scss/_base/_common.scss */
+section.product-tabs .tabs ul li.active {
+  color: #3160ad;
+}
+/* line 424, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc {
+  display: flex;
+  align-items: flex-start;
+}
+/* line 427, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .tab-info {
+  width: 50%;
+}
+/* line 429, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .tab-info .para-txt {
+  margin-bottom: 20px;
+}
+/* line 433, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .tab-info-img {
+  padding-bottom: 50px;
+}
+/* line 436, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .tab-info-img .product-wrp .product-img {
+  left: 50%;
+  transform: translateX(-50%);
+  right: inherit;
+}
+/* line 441, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .tab-info-img .product-wrp .model-img {
+  left: -10%;
+  max-width: 90px;
+  width: 100%;
+}
+/* line 448, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .middle-img {
+  max-width: 436px;
+  width: 100%;
+}
+/* line 451, ../scss/_base/_common.scss */
+section.product-tabs .tab-desc .middle-img .bg-img > .img-absolute {
+  top: 65%;
+  display: block;
+}
+
+/* line 459, ../scss/_base/_common.scss */
+section.ingredients {
+  background: linear-gradient(to bottom, #e8fafd, #b5e0e7);
+}
+/* line 462, ../scss/_base/_common.scss */
+section.ingredients .advantages-info .owl-dots {
+  margin-top: 20px;
+}
+/* line 465, ../scss/_base/_common.scss */
+section.ingredients .advantages-info .owl-dots button.owl-dot {
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+}
+/* line 469, ../scss/_base/_common.scss */
+section.ingredients .advantages-info .owl-dots button.owl-dot.active {
+  background-color: #3160ad;
+}
+/* line 474, ../scss/_base/_common.scss */
+section.ingredients .head-txt {
+  margin-bottom: 60px;
+  text-align: center;
+}
+/* line 477, ../scss/_base/_common.scss */
+section.ingredients .head-txt h2 span {
+  position: relative;
+  left: -170px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+/* line 484, ../scss/_base/_common.scss */
+section.ingredients .ingredient-wrp {
+  margin-bottom: 30px;
+}
+/* line 487, ../scss/_base/_common.scss */
+section.ingredients .ingredient-wrp h3 {
+  font-family: "ProximaNova-Bold";
+  font-size: 2.6rem;
+  color: #3160ad;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+/* line 493, ../scss/_base/_common.scss */
+section.ingredients .ingredient-wrp h3:before {
+  counter-increment: number;
+  content: counter(number);
+  display: inline-flex;
+  background-color: #4ddff9;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+/* line 509, ../scss/_base/_common.scss */
+section.ingredients .adv-wrp ol {
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+  margin-top: 30px;
+}
+/* line 515, ../scss/_base/_common.scss */
+section.ingredients .adv-wrp h3 {
+  font-family: "ProximaNova-Bold";
+  font-size: 1.8rem;
+  color: #3160ad;
+  text-transform: uppercase;
+}
+/* line 521, ../scss/_base/_common.scss */
+section.ingredients .adv-wrp li {
+  margin: 10px 0;
+}
+
+/* line 531, ../scss/_base/_common.scss */
+section.faq .question-wrp .quest-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 535, ../scss/_base/_common.scss */
+section.faq .question-wrp .quest-txt .drop-sign {
+  font-size: 30px;
+  color: #fff;
+  background-color: #3160ad;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 547, ../scss/_base/_common.scss */
+section.faq .question-wrp .quertions {
+  font-size: 2rem;
+  font-family: "ProximaNova-Bold";
+  color: #3160ad;
+}
+/* line 551, ../scss/_base/_common.scss */
+section.faq .question-wrp .quertions:before {
+  content: 'Q.';
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 3.6rem;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 559, ../scss/_base/_common.scss */
+section.faq .question-wrp .answers {
+  margin-top: 20px;
+  display: none;
+}
+/* line 562, ../scss/_base/_common.scss */
+section.faq .question-wrp .answers:before {
+  content: 'A.';
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 2.4rem;
+  color: #3160ad;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 571, ../scss/_base/_common.scss */
+section.faq .question-wrp li {
+  margin: 20px 0;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*-----------------Inner Page Ends-----------------*/
+/*-----------------Prohance-C Page Starts-----------------*/
+/* line 586, ../scss/_base/_common.scss */
+.prohance-c #rotator {
+  background: transparent url(../images/prohanceC/prohance-classic-sprite.png) no-repeat 0 0;
+}
+/* line 589, ../scss/_base/_common.scss */
+.prohance-c section.main-banner .middle-img .run-img {
+  top: -25%;
+  left: -15%;
+  max-width: 115px;
+}
+/* line 594, ../scss/_base/_common.scss */
+.prohance-c section.video-scoop .video-txt {
+  left: 50%;
+  top: 30%;
+  text-align: center;
+  max-width: 550px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*-----------------Prohance-C Page Ends-----------------*/
+/*-----------------Prohance-M Page Starts-----------------*/
+/* line 611, ../scss/_base/_common.scss */
+.prohance-m header ul.main-menu li:after {
+  background: -webkit-gradient(linear, left top, right top, from(#fec5d3), to(#ac4bca));
+  background: linear-gradient(-270deg, #fec5d3, #ac4bca);
+}
+/* line 618, ../scss/_base/_common.scss */
+.prohance-m #rotator {
+  background: transparent url(../images/prohanceM/prohance-mom-sprite.png) no-repeat 0 0;
+}
+/* line 621, ../scss/_base/_common.scss */
+.prohance-m section.main-banner .middle-img .run-img {
+  left: -10%;
+  top: 7%;
+  max-width: 110px;
+}
+/* line 626, ../scss/_base/_common.scss */
+.prohance-m section.video-scoop .video-txt {
+  left: 75%;
+  top: inherit;
+  bottom: 20%;
+  text-align: left;
+  max-width: 470px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/*-----------------Prohance-M Page Ends-----------------*/
+/*-----------------Prohance-D Page Starts-----------------*/
+/* line 644, ../scss/_base/_common.scss */
+.prohanceD header ul.main-menu li:after {
+  background: -webkit-gradient(linear, left top, right top, from(#bcf3fc), to(#3167fb));
+  background: linear-gradient(-270deg, #bcf3fc, #3167fb);
+}
+
+/* line 654, ../scss/_base/_common.scss */
+section.main-banner {
+  background: linear-gradient(to bottom, #e8fafd, #b5e0e7);
+}
+/* line 656, ../scss/_base/_common.scss */
+section.main-banner .middle-wrp {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* line 667, ../scss/_base/_common.scss */
+section.main-banner .left-text {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 30%;
+  padding-right: 30px;
+}
+/* line 672, ../scss/_base/_common.scss */
+section.main-banner .left-text > p {
+  font-family: "Courgette-Regular";
+  font-size: 2.2rem;
+}
+/* line 677, ../scss/_base/_common.scss */
+section.main-banner .right-text {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 30%;
+}
+
+/* line 683, ../scss/_base/_common.scss */
+.middle-img {
+  position: relative;
+  text-align: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/* line 691, ../scss/_base/_common.scss */
+.middle-img .product-img {
+  max-width: 230px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 699, ../scss/_base/_common.scss */
+.middle-img img {
+  width: 100%;
+}
+/* line 702, ../scss/_base/_common.scss */
+.middle-img .run-img {
+  position: absolute;
+  left: -35%;
+  top: 7%;
+  max-width: 291px;
+  width: 100%;
+}
+
+/* line 714, ../scss/_base/_common.scss */
+section.product-property {
+  background: white;
+}
+/* line 716, ../scss/_base/_common.scss */
+section.product-property .middle-wrp {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 721, ../scss/_base/_common.scss */
+section.product-property .left-text {
+  margin-top: 100px;
+}
+/* line 723, ../scss/_base/_common.scss */
+section.product-property .left-text p.para-txt {
+  font-family: "ProximaNova-Regular";
+  font-size: 1.8rem;
+}
+/* line 727, ../scss/_base/_common.scss */
+section.product-property .left-text .pro-desc {
+  padding-left: 60px;
+}
+/* line 731, ../scss/_base/_common.scss */
+section.product-property .left-text .head-txt .arrows1 {
+  position: absolute;
+  left: -15px;
+  bottom: -40%;
+}
+/* line 739, ../scss/_base/_common.scss */
+section.product-property .middle-img .bg-img {
+  max-width: 420px;
+  width: 100%;
+}
+/* line 744, ../scss/_base/_common.scss */
+section.product-property .right-text {
+  margin-top: 100px;
+}
+/* line 746, ../scss/_base/_common.scss */
+section.product-property .right-text .pro-desc {
+  padding-right: 40px;
+}
+/* line 750, ../scss/_base/_common.scss */
+section.product-property .right-text .head-txt .arrows2 {
+  position: absolute;
+  right: 10px;
+  bottom: -40%;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+/* line 755, ../scss/_base/_common.scss */
+section.product-property .right-text .head-txt .arrows2 img {
+  transform: rotate(30deg);
+}
+
+/* line 766, ../scss/_base/_common.scss */
+section.benefits {
+  background: linear-gradient(to bottom, #effff8, #c9e9d2);
+}
+/* line 768, ../scss/_base/_common.scss */
+section.benefits .middle-img .bg-img > img {
+  position: static;
+  margin: 0 auto;
+  transform: inherit;
+}
+/* line 773, ../scss/_base/_common.scss */
+section.benefits .petal2 {
+  left: 32%;
+  top: 75%;
+}
+/* line 777, ../scss/_base/_common.scss */
+section.benefits .wrapper > .head-txt {
+  text-align: center;
+  margin-bottom: 120px;
+}
+/* line 782, ../scss/_base/_common.scss */
+section.benefits ul.pro-count li {
+  border: none;
+}
+/* line 784, ../scss/_base/_common.scss */
+section.benefits ul.pro-count li .pro-speciality p {
+  font-family: "ProximaNova-Regular";
+}
+/* line 788, ../scss/_base/_common.scss */
+section.benefits .left-text .pro-desc {
+  position: relative;
+  padding-left: 0;
+}
+/* line 791, ../scss/_base/_common.scss */
+section.benefits .left-text .pro-desc .arrows3 {
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 796, ../scss/_base/_common.scss */
+section.benefits .left-text .pro-desc .arrows3 img {
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+/* line 801, ../scss/_base/_common.scss */
+section.benefits .left-text {
+  margin-top: 0;
+}
+/* line 805, ../scss/_base/_common.scss */
+section.benefits .right-text .pro-desc {
+  padding-right: 0;
+}
+/* line 808, ../scss/_base/_common.scss */
+section.benefits .right-text .arrows3 {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+}
+/* line 812, ../scss/_base/_common.scss */
+section.benefits .right-text .arrows3 img {
+  -webkit-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+}
+
+/* line 822, ../scss/_base/_common.scss */
+section.video-scoop {
+  z-index: 3;
+}
+/* line 824, ../scss/_base/_common.scss */
+section.video-scoop:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+}
+/* line 834, ../scss/_base/_common.scss */
+section.video-scoop .big-petal {
+  left: 15%;
+  top: -5%;
+}
+/* line 838, ../scss/_base/_common.scss */
+section.video-scoop .wrapper {
+  position: relative;
+}
+/* line 841, ../scss/_base/_common.scss */
+section.video-scoop .video-wrp {
+  height: 100%;
+}
+/* line 843, ../scss/_base/_common.scss */
+section.video-scoop .video-wrp iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 848, ../scss/_base/_common.scss */
+section.video-scoop .video-txt {
+  color: white;
+  position: absolute;
+  max-width: 470px;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 855, ../scss/_base/_common.scss */
+section.video-scoop .video-txt .head-txt h2 {
+  color: white;
+}
+
+/* line 864, ../scss/_base/_common.scss */
+section.health {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* line 868, ../scss/_base/_common.scss */
+section.health .middle-wrp .middle-img {
+  align-self: flex-end;
+}
+/* line 872, ../scss/_base/_common.scss */
+section.health .head-txt h2 span {
+  margin-left: -80px;
+}
+/* line 876, ../scss/_base/_common.scss */
+section.health .right-text {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/* line 880, ../scss/_base/_common.scss */
+section.health .petal5 {
+  left: 65%;
+  top: 88%;
+}
+/* line 884, ../scss/_base/_common.scss */
+section.health .btn-wrp {
+  text-align: right;
+}
+
+/*-----------------Prohance-D Page Starts-----------------*/
+/*-----------------Recipe Listing Page Starts-----------------*/
+/* line 895, ../scss/_base/_common.scss */
+section.recipe-banner {
+  padding-bottom: 85px;
+}
+/* line 897, ../scss/_base/_common.scss */
+section.recipe-banner .wrapper {
+  justify-content: center;
+}
+/* line 900, ../scss/_base/_common.scss */
+section.recipe-banner .recipe-txt {
+  position: absolute;
+  top: 20%;
+  left: -15%;
+}
+/* line 904, ../scss/_base/_common.scss */
+section.recipe-banner .recipe-txt h1 span {
+  font-size: 4.8rem;
+  font-family: "Courgette-Regular";
+  color: #3160ad;
+  display: block;
+}
+/* line 909, ../scss/_base/_common.scss */
+section.recipe-banner .recipe-txt h1 span:last-child {
+  text-align: right;
+}
+/* line 913, ../scss/_base/_common.scss */
+section.recipe-banner .recipe-txt .recipe-para {
+  max-width: 250px;
+  width: 100%;
+  line-height: 30px;
+  margin-top: 30px;
+}
+/* line 918, ../scss/_base/_common.scss */
+section.recipe-banner .recipe-txt .recipe-para p {
+  font-size: 2.2rem;
+  font-family: "Courgette-Regular";
+}
+
+/* line 929, ../scss/_base/_common.scss */
+section.recipe-listing .wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 933, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp {
+  margin: 50px;
+}
+/* line 937, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-link:hover .recipe-img > img {
+  transform: scale(1.1);
+}
+/* line 940, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-link:hover .recipe-img p {
+  color: #000;
+}
+/* line 943, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-link:hover .recipe-img p:after {
+  background-color: #3160ad;
+  height: 3px;
+  width: 100%;
+}
+/* line 950, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-img {
+  overflow: hidden;
+}
+/* line 953, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-img p {
+  font-size: 2.4rem;
+  font-family: "ProximaNova-Semibold";
+  color: #3160ad;
+  margin: 15px 0;
+  transition: 0.5s;
+}
+/* line 959, ../scss/_base/_common.scss */
+section.recipe-listing .recipe-wrp .recipe-img p:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 70%;
+  background-color: #b2b2b2;
+  transition: 0.5s;
+}
+
+/* line 970, ../scss/_base/_common.scss */
+.recipe-img > img {
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+/* line 975, ../scss/_base/_common.scss */
+.level-wrp .serve-wrp {
+  margin-bottom: 15px;
+}
+/* line 978, ../scss/_base/_common.scss */
+.level-wrp p {
+  font-size: 1.4rem;
+  font-family: "ProximaNova-Semibold";
+  color: #b2b2b2;
+}
+/* line 982, ../scss/_base/_common.scss */
+.level-wrp p span {
+  color: #000;
+}
+
+/*-----------------Recipe Listing Page Ends-----------------*/
+/*-----------------Recipe Details Page Starts-----------------*/
+/* line 993, ../scss/_base/_common.scss */
+section.recipe-details .wrapper {
+  align-items: inherit;
+}
+/* line 996, ../scss/_base/_common.scss */
+section.recipe-details .recipe-info {
+  width: 50%;
+}
+/* line 998, ../scss/_base/_common.scss */
+section.recipe-details .recipe-info h3 {
+  font-size: 3rem;
+  font-family: "ProximaNova-Bold";
+  color: #3160ad;
+  text-transform: capitalize;
+}
+/* line 1004, ../scss/_base/_common.scss */
+section.recipe-details .recipe-info .recipe-para {
+  padding: 20px 0;
+  margin: 20px 0;
+  border-bottom: 1px solid #b2b2b2;
+  border-top: 1px solid #b2b2b2;
+  width: 80%;
+}
+/* line 1011, ../scss/_base/_common.scss */
+section.recipe-details .recipe-info .level-wrp .serve-wrp {
+  justify-content: flex-start;
+}
+/* line 1013, ../scss/_base/_common.scss */
+section.recipe-details .recipe-info .level-wrp .serve-wrp p {
+  margin-right: 30px;
+}
+
+/* line 1021, ../scss/_base/_common.scss */
+section.recipe-tabs .wrapper {
+  background-color: #edfcff;
+  padding: 30px;
+  border-radius: 20px;
+}
+/* line 1026, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs {
+  margin-top: 0;
+}
+/* line 1028, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul {
+  text-transform: uppercase;
+  font-family: "ProximaNova-Bold";
+  justify-content: flex-start;
+  font-size: 1.8rem;
+}
+/* line 1033, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul li {
+  margin: 0 20px;
+  position: relative;
+  padding: 10px 0;
+  color: #5b5b5b;
+  opacity: 0.7;
+}
+/* line 1039, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul li.active {
+  opacity: 1;
+}
+/* line 1042, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul li:after {
+  content: '';
+  display: inline-block;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  background-color: #3160ad;
+  left: 0;
+  transition: 0.5s;
+}
+/* line 1054, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul li.active:after {
+  width: 100%;
+}
+/* line 1058, ../scss/_base/_common.scss */
+section.recipe-tabs .tabs ul li:hover:after {
+  width: 100%;
+}
+/* line 1066, ../scss/_base/_common.scss */
+section.recipe-tabs .tab-method li {
+  font-size: 1.8rem;
+  color: #414042;
+  margin-bottom: 20px;
+}
+/* line 1070, ../scss/_base/_common.scss */
+section.recipe-tabs .tab-method li span {
+  font-family: "ProximaNova-Semibold";
+}
+
+/* line 1079, ../scss/_base/_common.scss */
+section.nutritive-value .wrapper h2 {
+  font-size: 1.8rem;
+  color: #3160ad;
+  text-transform: uppercase;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 20px;
+}
+/* line 1086, ../scss/_base/_common.scss */
+section.nutritive-value .wrapper table {
+  background-color: #f5f5f5;
+}
+/* line 1088, ../scss/_base/_common.scss */
+section.nutritive-value .wrapper table th, section.nutritive-value .wrapper table td {
+  border: none;
+  padding: 15px 20px;
+  border-right: 3px solid #fff;
+  text-align: center !important;
+  font-family: "ProximaNova-Semibold";
+  font-size: 1.6rem;
+}
+/* line 1096, ../scss/_base/_common.scss */
+section.nutritive-value .wrapper table td {
+  color: #3160ad;
+}
+/* line 1101, ../scss/_base/_common.scss */
+section.nutritive-value .tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 1102, ../scss/_base/_common.scss */
+section.nutritive-value .tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+/* line 1103, ../scss/_base/_common.scss */
+section.nutritive-value .tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+/* line 1104, ../scss/_base/_common.scss */
+section.nutritive-value .tg .tg-s268 {
+  text-align: left;
+}
+/* line 1105, ../scss/_base/_common.scss */
+section.nutritive-value .tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+/*-----------------Recipe Details Page Ends-----------------*/
+/*  Terms Of Use, Privacy Policy and Disclaimer Starts */
+/* line 1111, ../scss/_base/_common.scss */
+section.terms .head-txt {
+  padding-bottom: 50px;
+}
+/* line 1114, ../scss/_base/_common.scss */
+section.terms .para-wrp {
+  padding-bottom: 20px;
+}
+/* line 1116, ../scss/_base/_common.scss */
+section.terms .para-wrp .title {
+  padding-bottom: 10px;
+}
+/* line 1118, ../scss/_base/_common.scss */
+section.terms .para-wrp .title h3 {
+  font-size: 2.2rem;
+  font-family: "ProximaNova-Bold";
+}
+/* line 1123, ../scss/_base/_common.scss */
+section.terms .para-wrp p {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Regular";
+  line-height: 27px;
+}
+
+/*  Terms Of Use, Privacy Policy and Disclaimer Ends */
+/*-----------------Footer Starts-----------------*/
+/* line 1135, ../scss/_base/_common.scss */
+.ft-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/* line 1143, ../scss/_base/_common.scss */
+footer .wrapper {
+  padding: 15px 40px;
+}
+/* line 1147, ../scss/_base/_common.scss */
+footer .copy p.copyright {
+  font-size: 1.2rem;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 1152, ../scss/_base/_common.scss */
+footer ul li {
+  border-right: 1px solid grey;
+  padding: 0 7px;
+}
+/* line 1155, ../scss/_base/_common.scss */
+footer ul li:last-child {
+  border: none;
+}
+/* line 1158, ../scss/_base/_common.scss */
+footer ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "ProximaNova-Semibold";
+  text-transform: capitalize;
+  color: inherit;
+}
+/* line 1167, ../scss/_base/_common.scss */
+footer .social-wrp li {
+  border: none;
+}
+
+/*-----------------Footer Ends-----------------*/
+/*-----------------Animations Starts-----------------*/
+/* line 1179, ../scss/_base/_common.scss */
+.left-animate {
+  -webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+/* line 1183, ../scss/_base/_common.scss */
+.right-animate {
+  -webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+/* line 1187, ../scss/_base/_common.scss */
+.fade-animate {
+  opacity: 0;
+}
+
+/* line 1190, ../scss/_base/_common.scss */
+.top-animate {
+  -webkit-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+/* line 1194, ../scss/_base/_common.scss */
+.bottom-animate {
+  -webkit-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  transform: translateY(120%);
+  opacity: 0;
+}
+
+/* line 1200, ../scss/_base/_common.scss */
+section.active .left-animate, section.active .right-animate {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  opacity: 1;
+}
+/* line 1204, ../scss/_base/_common.scss */
+section.active .top-animate, section.active .bottom-animate {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}
+/* line 1208, ../scss/_base/_common.scss */
+section.active .fade-animate {
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+/*-----------------Animations Ends-----------------*/
+/* line 1217, ../scss/_base/_common.scss */
+.fp-section {
+  margin-top: -10px;
+}

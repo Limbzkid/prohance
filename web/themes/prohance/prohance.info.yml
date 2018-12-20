@@ -1,0 +1,25 @@
+name: Prohance
+type: theme
+description: A basic custom theme
+core: 8.x
+
+libraries:
+  - prohance/global
+
+stylesheets-remove:
+  - /core/themes/stable/css/views/views.module.css
+
+regions:
+  header: 'Header'
+  message: 'Message'
+  logo: 'Logo'
+  menu_left: 'Menu Left'
+  menu_right: 'Menu Right'
+  banner: 'Banner'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_middle: 'Content Middle'
+  content_bottom: 'Content Bottom'
+  footer_top: 'Footer Top'
+  footer: 'Footer'
+

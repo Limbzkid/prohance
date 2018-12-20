@@ -1,0 +1,1266 @@
+@media screen and (max-width: 1440px) {
+  /* line 6, ../scss/media.scss */
+  header .wrapper {
+    padding: 0;
+  }
+
+  /* line 11, ../scss/media.scss */
+  .inner-product .pro-cart {
+    justify-content: flex-end;
+    padding-right: 0px;
+  }
+
+  /* line 15, ../scss/media.scss */
+  .inner-product .product-carousel {
+    left: -150px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  /* line 23, ../scss/media.scss */
+  #rotator {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  /* line 26, ../scss/media.scss */
+  section {
+    padding: 30px 0;
+  }
+
+  /* line 31, ../scss/media.scss */
+  section.product .landing-desc {
+    top: -50px;
+  }
+
+  /* line 38, ../scss/media.scss */
+  .head-txt h2 {
+    font-size: 5.5rem;
+  }
+
+  /* line 45, ../scss/media.scss */
+  .inner-product .product-carousel {
+    left: -130px;
+    top: 40%;
+  }
+
+  /* line 49, ../scss/media.scss */
+  .inner-product .buy-btn p {
+    margin-bottom: 10px;
+  }
+
+  /* line 52, ../scss/media.scss */
+  .inner-product .product-carousel .para-txt {
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+
+  /* line 57, ../scss/media.scss */
+  .inner-product .product-buy .product-wrp,
+  .product-tabs .tab-desc .middle-img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* line 61, ../scss/media.scss */
+  .product-tabs .middle-img .run-img {
+    max-width: 271px;
+  }
+
+  /* line 64, ../scss/media.scss */
+  .product-tabs .tabs {
+    margin-top: 10px;
+  }
+
+  /* line 67, ../scss/media.scss */
+  section.ingredients .head-txt {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 76, ../scss/media.scss */
+  header .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* line 82, ../scss/media.scss */
+  #rotator {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  /* line 86, ../scss/media.scss */
+  .prohance-m section.main-banner .middle-img .run-img {
+    left: -10%;
+    top: 7%;
+    max-width: 90px;
+  }
+
+  /* line 91, ../scss/media.scss */
+  ul.pro-count li p {
+    font-size: 2rem;
+  }
+
+  /* line 94, ../scss/media.scss */
+  ul.pro-count li .reg-txt {
+    font-size: 1.8rem;
+  }
+
+  /* line 97, ../scss/media.scss */
+  section.main-banner .left-text > p {
+    font-size: 2rem;
+  }
+
+  /* line 100, ../scss/media.scss */
+  .head-txt h2 {
+    font-size: 4.5rem;
+  }
+
+  /* line 104, ../scss/media.scss */
+  section.main-banner .left-text,
+  section.main-banner .right-text {
+    width: 40%;
+  }
+
+  /* line 107, ../scss/media.scss */
+  .para-txt, section.product-property .left-text p.para-txt {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+
+  /* line 111, ../scss/media.scss */
+  section.product-property .left-text .pro-desc {
+    padding-left: 30px;
+  }
+
+  /* line 114, ../scss/media.scss */
+  ul.pro-contents .pro-speciality p {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  /* line 118, ../scss/media.scss */
+  span[class*="arrow"] {
+    display: inline-block;
+    width: 10%;
+  }
+
+  /* line 122, ../scss/media.scss */
+  span[class*="arrow"] > img {
+    width: 100%;
+  }
+
+  /* line 125, ../scss/media.scss */
+  section.benefits .left-text .pro-desc .arrows3 {
+    right: 10px;
+  }
+
+  /* line 128, ../scss/media.scss */
+  section.benefits .right-text .arrows3 {
+    left: 30px;
+    top: 30%;
+  }
+
+  /* line 132, ../scss/media.scss */
+  section.benefits .right-text .pro-desc {
+    padding-left: 30px;
+  }
+
+  /* line 135, ../scss/media.scss */
+  section.health .left-text .run-img {
+    max-width: 300px;
+    width: 100%;
+  }
+  /* line 138, ../scss/media.scss */
+  section.health .left-text .run-img > img {
+    width: 100%;
+  }
+
+  /* line 143, ../scss/media.scss */
+  section.health .left-text,
+  section.health .right-text {
+    width: 30%;
+  }
+
+  /* line 146, ../scss/media.scss */
+  section.health .middle-img .bg-img {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  /* line 155, ../scss/media.scss */
+  section.main-banner .left-text > p,
+  ul.pro-count li p {
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+
+  /* line 159, ../scss/media.scss */
+  ul.pro-count li .cour-txt {
+    font-size: 3rem;
+  }
+
+  /* line 162, ../scss/media.scss */
+  section.main-banner .middle-img .run-img {
+    max-width: 240px;
+  }
+
+  /* line 168, ../scss/media.scss */
+  .prohance-c section.main-banner .middle-img .run-img {
+    top: -10%;
+    left: -15%;
+    max-width: 100px;
+  }
+
+  /* line 177, ../scss/media.scss */
+  .inner-product .product-carousel {
+    top: 50%;
+  }
+
+  /* line 181, ../scss/media.scss */
+  .inner-product .product-buy .product-wrp,
+  .product-tabs .tab-desc .middle-img {
+    max-width: 350px;
+  }
+
+  /* line 184, ../scss/media.scss */
+  .inner-product .product-wrp .product-img {
+    max-width: 185px;
+  }
+
+  /* line 187, ../scss/media.scss */
+  .product-tabs .tabs ul {
+    font-size: 2.4rem;
+    justify-content: space-around;
+  }
+
+  /* line 191, ../scss/media.scss */
+  section.product-tabs .tabs ul {
+    font-size: 2.4rem;
+  }
+
+  /* line 194, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info-img {
+    text-align: center;
+  }
+
+  /* line 197, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info-img .product-wrp .model-img {
+    left: 5%;
+  }
+
+  /* line 200, ../scss/media.scss */
+  section.ingredients .ingredient-wrp h3 {
+    font-size: 2.4rem;
+  }
+
+  /* line 206, ../scss/media.scss */
+  .product-wrp .product-img {
+    right: -5%;
+  }
+
+  /* line 209, ../scss/media.scss */
+  .product-wrp img {
+    width: 75%;
+  }
+
+  /* line 212, ../scss/media.scss */
+  .product-wrp .product-img:after {
+    width: 75%;
+    height: 31px;
+    left: 40%;
+  }
+
+  /* line 221, ../scss/media.scss */
+  section.recipe-banner .bg-img {
+    text-align: center;
+  }
+
+  /* line 227, ../scss/media.scss */
+  .recipe-img > img {
+    width: 100%;
+  }
+
+  /* line 230, ../scss/media.scss */
+  .recipe-details .recipe-img > img {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 238, ../scss/media.scss */
+  #rotator {
+    display: none;
+  }
+
+  /* line 241, ../scss/media.scss */
+  .scroll-down {
+    display: none;
+  }
+
+  /* line 244, ../scss/media.scss */
+  section {
+    padding: 30px 0;
+  }
+
+  /* line 247, ../scss/media.scss */
+  .petal1 {
+    display: none;
+  }
+
+  /* line 254, ../scss/media.scss */
+  section.benefits .left-text .pro-desc .arrows3,
+  section.benefits .right-text .arrows3 {
+    display: none;
+  }
+
+  /* line 259, ../scss/media.scss */
+  header {
+    padding: 12px 0;
+  }
+  /* line 261, ../scss/media.scss */
+  header .pro-logo {
+    padding: 0;
+  }
+  /* line 265, ../scss/media.scss */
+  header nav {
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 60px 0;
+    right: 0;
+    width: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  /* line 274, ../scss/media.scss */
+  header nav.active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  /* line 277, ../scss/media.scss */
+  header nav ul.main-menu {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  /* line 284, ../scss/media.scss */
+  header .mob-menu {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin: 10px;
+  }
+  /* line 289, ../scss/media.scss */
+  header .mob-menu span {
+    display: inline-block;
+    width: 40px;
+    background-color: #000;
+    height: 2px;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /* line 296, ../scss/media.scss */
+  header .mob-menu span.active {
+    width: 30px;
+  }
+  /* line 298, ../scss/media.scss */
+  header .mob-menu span.active:before, header .mob-menu span.active:after {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  /* line 303, ../scss/media.scss */
+  header .mob-menu span:before, header .mob-menu span:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: -10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /* line 313, ../scss/media.scss */
+  header .mob-menu span:after {
+    top: 10px;
+  }
+
+  /* line 319, ../scss/media.scss */
+  header nav ul.main-menu li.main-logo {
+    display: none;
+  }
+
+  /* line 322, ../scss/media.scss */
+  header nav ul.main-menu li {
+    padding: 15px 0;
+  }
+
+  /* line 325, ../scss/media.scss */
+  header nav ul.main-menu li a {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  /* line 332, ../scss/media.scss */
+  section.product .landing-desc {
+    top: 0;
+    padding-bottom: 30px;
+  }
+
+  /* line 336, ../scss/media.scss */
+  section.product .flex-wrp {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  /* line 341, ../scss/media.scss */
+  section.product .product-wrp {
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+  /* line 345, ../scss/media.scss */
+  .product-wrp .product-img:after {
+    left: 52%;
+  }
+
+  /* line 351, ../scss/media.scss */
+  section.main-banner {
+    padding-bottom: 80px;
+  }
+
+  /* line 355, ../scss/media.scss */
+  section.main-banner .left-text,
+  section.main-banner .right-text {
+    width: 80%;
+    padding: 0;
+  }
+
+  /* line 359, ../scss/media.scss */
+  ul.pro-count li {
+    text-align: center;
+  }
+
+  /* line 362, ../scss/media.scss */
+  main > section.show-banner .middle-img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  /* line 367, ../scss/media.scss */
+  main > section.show-banner .left-text {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 50%;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+    line-height: 30px;
+  }
+
+  /* line 378, ../scss/media.scss */
+  main > section.show-banner .right-text {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  /* line 383, ../scss/media.scss */
+  section.main-banner .middle-wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 391, ../scss/media.scss */
+  section.product-property .right-text,
+  section.product-property .left-text {
+    margin-top: 0;
+  }
+
+  /* line 394, ../scss/media.scss */
+  section.main-banner .middle-img {
+    margin: 30px 0;
+  }
+
+  /* line 397, ../scss/media.scss */
+  section.product-property .left-text .head-txt .arrows1 {
+    left: -35px;
+  }
+
+  /* line 401, ../scss/media.scss */
+  section.benefits .left-text {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  /* line 406, ../scss/media.scss */
+  section.benefits .right-text {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  /* line 411, ../scss/media.scss */
+  section.benefits .middle-img {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  /* line 416, ../scss/media.scss */
+  section.benefits .wrapper > .head-txt {
+    margin-bottom: 0;
+  }
+
+  /* line 419, ../scss/media.scss */
+  section.video-scoop {
+    padding: 0;
+  }
+
+  /* line 422, ../scss/media.scss */
+  .prohance-m section.video-scoop .video-txt {
+    left: 50%;
+  }
+
+  /* line 426, ../scss/media.scss */
+  section.health .middle-wrp {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+  }
+
+  /* line 437, ../scss/media.scss */
+  section.health .right-text {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+  }
+
+  /* line 443, ../scss/media.scss */
+  section.health .left-text {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  /* line 448, ../scss/media.scss */
+  section.health .middle-img {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: 0;
+  }
+
+  /* line 455, ../scss/media.scss */
+  section.health .left-text,
+  section.health .middle-img {
+    width: 50%;
+    line-height: 0;
+  }
+
+  /* line 459, ../scss/media.scss */
+  section.health .head-txt h2 span {
+    margin-left: 0;
+  }
+
+  /* line 462, ../scss/media.scss */
+  section.health {
+    padding-bottom: 0;
+  }
+
+  /* line 465, ../scss/media.scss */
+  section.main-banner button.exp-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  /* line 471, ../scss/media.scss */
+  section.health .btn-wrp {
+    text-align: left;
+  }
+
+  /* line 477, ../scss/media.scss */
+  section.health button.exp-btn {
+    position: static;
+    transform: inherit;
+  }
+
+  /* line 481, ../scss/media.scss */
+  section.main-banner .middle-img .run-img {
+    max-width: 250px;
+    left: -28%;
+    top: 15%;
+  }
+
+  /* line 486, ../scss/media.scss */
+  .prohanceD .owl-dots button.owl-dot.active {
+    background-color: #3160ad;
+  }
+
+  /* line 494, ../scss/media.scss */
+  section.recipe-details .recipe-info h3 {
+    font-size: 2.4rem;
+  }
+
+  /* line 500, ../scss/media.scss */
+  section.nutritive-value .table-wrp {
+    overflow-x: auto;
+  }
+
+  /* line 507, ../scss/media.scss */
+  section.recipe-banner .recipe-txt {
+    left: -7%;
+  }
+  /* line 509, ../scss/media.scss */
+  section.recipe-banner .recipe-txt h1 span {
+    font-size: 4rem;
+  }
+  /* line 513, ../scss/media.scss */
+  section.recipe-banner .product-img {
+    text-align: center;
+  }
+
+  /* line 519, ../scss/media.scss */
+  section.recipe-listing .recipe-wrp {
+    margin: 30px;
+  }
+
+  /* line 526, ../scss/media.scss */
+  .inner-product .product-buy {
+    text-align: center;
+  }
+
+  /* line 529, ../scss/media.scss */
+  .inner-product .highlight {
+    text-align: center;
+  }
+
+  /* line 532, ../scss/media.scss */
+  .inner-product ul.pro-count {
+    justify-content: center;
+  }
+
+  /* line 535, ../scss/media.scss */
+  .inner-product .pro-cart {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* line 539, ../scss/media.scss */
+  .inner-product .wrapper {
+    display: block;
+  }
+
+  /* line 540, ../scss/media.scss */
+  .inner-product .product-showcase {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  /* line 544, ../scss/media.scss */
+  section.product-tabs .tab-desc {
+    flex-direction: column;
+  }
+
+  /* line 547, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info {
+    width: 100%;
+  }
+
+  /* line 550, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info-img {
+    margin: 0 auto;
+  }
+
+  /* line 553, ../scss/media.scss */
+  .product-tabs .tab-desc .tab-info {
+    display: none;
+  }
+
+  /* line 554, ../scss/media.scss */
+  .product-tabs .tab-desc .tab-info.active {
+    display: block;
+  }
+
+  /* line 555, ../scss/media.scss */
+  section.ingredients .head-txt h2 span {
+    left: -150px;
+  }
+
+  /* line 558, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info {
+    margin-top: 20px;
+  }
+
+  /* line 561, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info-img {
+    padding-top: 30px;
+  }
+
+  /* line 564, ../scss/media.scss */
+  section.product-tabs .tabs-dropdown {
+    display: block;
+  }
+
+  /* line 567, ../scss/media.scss */
+  section.product-tabs .tabs {
+    display: none;
+    margin: -10px 0 0 0;
+    box-shadow: 1px 1px 5px 1px #ddd;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /* line 575, ../scss/media.scss */
+  section.product-tabs .tabs ul {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* line 580, ../scss/media.scss */
+  section.product-tabs .tabs ul li {
+    padding: 10px 15px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* line 585, ../scss/media.scss */
+  section.product-tabs .tabs ul li:last-child {
+    border-bottom: 0;
+  }
+
+  /* line 591, ../scss/media.scss */
+  section.recipe-tabs .tabs {
+    display: block !important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+  }
+
+  /* line 596, ../scss/media.scss */
+  section.recipe-tabs .tabs ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-direction: unset!important;
+    align-items: unset!important;
+  }
+
+  /* line 603, ../scss/media.scss */
+  section.recipe-tabs .tabs ul li {
+    width: unset !important;
+    padding: 10px 0 !important;
+  }
+
+  /* line 609, ../scss/media.scss */
+  .ft-fixed {
+    position: relative;
+  }
+
+  /* line 612, ../scss/media.scss */
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* line 618, ../scss/media.scss */
+  footer .wrapper .copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* line 627, ../scss/media.scss */
+  footer .wrapper .subs-wrp,
+  footer .wrapper .copy ul,
+  footer .wrapper .copy p {
+    margin-bottom: 15px;
+  }
+
+  /* line 630, ../scss/media.scss */
+  .bg-img > .img-absolute {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 638, ../scss/media.scss */
+  .head-txt h2 {
+    font-size: 4rem;
+    line-height: 50px;
+  }
+
+  /* line 642, ../scss/media.scss */
+  section.benefits .petal2 {
+    left: 10%;
+  }
+
+  /* line 645, ../scss/media.scss */
+  span[class*="arrow"] {
+    width: 8%;
+  }
+
+  /* line 648, ../scss/media.scss */
+  header nav {
+    width: 60%;
+  }
+
+  /* line 653, ../scss/media.scss */
+  .prohance-m section.main-banner .middle-img .run-img {
+    left: 0;
+  }
+
+  /* line 656, ../scss/media.scss */
+  .bg-img > .img-absolute {
+    width: 50% !important;
+    top: 62%;
+  }
+
+  /* line 660, ../scss/media.scss */
+  section.main-banner .left-text, section.main-banner .right-text {
+    width: 85%;
+  }
+
+  /* line 663, ../scss/media.scss */
+  .petal6 {
+    display: none;
+  }
+
+  /* line 666, ../scss/media.scss */
+  section.health .left-text, section.health .middle-img {
+    width: 50%;
+  }
+
+  /* line 669, ../scss/media.scss */
+  section.benefits ul.pro-count li .pro-speciality p {
+    text-align: left;
+  }
+
+  /* line 676, ../scss/media.scss */
+  .prohanceD section.main-banner .middle-img .run-img {
+    max-width: 60%;
+    left: -10px;
+  }
+
+  /* line 683, ../scss/media.scss */
+  .prohance-c section.main-banner .middle-img .run-img {
+    left: -10px;
+    max-width: 25%;
+  }
+
+  /* line 690, ../scss/media.scss */
+  section.recipe-details .wrapper {
+    flex-direction: column;
+  }
+
+  /* line 693, ../scss/media.scss */
+  section.recipe-details .recipe-info {
+    width: 100%;
+  }
+
+  /* line 696, ../scss/media.scss */
+  section.recipe-details .recipe-info:last-child {
+    margin-top: 30px;
+  }
+
+  /* line 699, ../scss/media.scss */
+  .recipe-details .recipe-img > img {
+    width: 100%;
+  }
+
+  /* line 707, ../scss/media.scss */
+  section.recipe-banner .recipe-txt {
+    left: 0;
+  }
+  /* line 709, ../scss/media.scss */
+  section.recipe-banner .recipe-txt h1 span {
+    font-size: 3rem;
+  }
+  /* line 712, ../scss/media.scss */
+  section.recipe-banner .recipe-txt .recipe-para {
+    max-width: 200px;
+    line-height: 24px;
+  }
+  /* line 715, ../scss/media.scss */
+  section.recipe-banner .recipe-txt .recipe-para p {
+    font-size: 1.8rem;
+  }
+
+  /* line 727, ../scss/media.scss */
+  .inner-product .product-showcase {
+    flex-direction: column-reverse;
+  }
+
+  /* line 730, ../scss/media.scss */
+  .inner-product .product-carousel {
+    max-width: 300px;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-top: 30px;
+    transform: initial;
+  }
+
+  /* line 738, ../scss/media.scss */
+  .owl-carousel .owl-item img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* line 742, ../scss/media.scss */
+  .inner-product .product-carousel .owl-item {
+    transform: initial;
+  }
+
+  /* line 745, ../scss/media.scss */
+  .inner-product .product-buy .product-img img.active {
+    margin: 0 auto;
+  }
+
+  /* line 748, ../scss/media.scss */
+  section.product-tabs .tab-desc .tab-info-img {
+    padding-top: 30px;
+  }
+
+  /* line 751, ../scss/media.scss */
+  .product-tabs .middle-img .run-img {
+    left: 0;
+  }
+
+  /* line 755, ../scss/media.scss */
+  section.ingredients .head-txt h2 span {
+    left: 0px;
+    margin-bottom: 0;
+  }
+
+  /* line 759, ../scss/media.scss */
+  section.ingredients .ingredient-wrp h3:before {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* line 763, ../scss/media.scss */
+  section.ingredients .advantages-info .owl-dots button.owl-dot {
+    width: 25px;
+    height: 4px;
+  }
+
+  /* line 767, ../scss/media.scss */
+  section.faq .question-wrp li {
+    padding: 10px;
+  }
+
+  /* line 768, ../scss/media.scss */
+  section.faq .question-wrp .quertions:before {
+    font-size: 2.4rem;
+  }
+
+  /* line 771, ../scss/media.scss */
+  section.faq .question-wrp .quertions {
+    font-size: 1.8rem;
+  }
+
+  /* line 774, ../scss/media.scss */
+  section.faq .question-wrp .quest-txt .drop-sign {
+    margin-left: 5px;
+    font-size: 20px;
+    width: 24px;
+    height: 20px;
+  }
+
+  /* line 780, ../scss/media.scss */
+  section.faq .question-wrp .answers:before {
+    font-size: 2rem;
+  }
+
+  /* line 787, ../scss/media.scss */
+  .pop-contact-wrp {
+    padding: 10px;
+    width: 90%;
+  }
+
+  /* line 791, ../scss/media.scss */
+  .pop-contact-wrp .head-txt h2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 802, ../scss/media.scss */
+  .head-txt h2 {
+    font-size: 3rem;
+    line-height: 40px;
+    padding: 10px 0;
+  }
+
+  /* line 807, ../scss/media.scss */
+  .big-petal {
+    display: none;
+  }
+
+  /* line 810, ../scss/media.scss */
+  header nav {
+    width: 100%;
+  }
+
+  /* line 813, ../scss/media.scss */
+  header .mob-menu span {
+    width: 35px;
+  }
+
+  /* line 816, ../scss/media.scss */
+  header nav ul.main-menu li a {
+    font-size: 1.8rem;
+  }
+
+  /* line 821, ../scss/media.scss */
+  section.product .landing-desc {
+    font-size: 1.4rem;
+  }
+
+  /* line 824, ../scss/media.scss */
+  section.product .product-wrp {
+    margin-bottom: 100px;
+  }
+
+  /* line 827, ../scss/media.scss */
+  .product-wrp .product-img {
+    right: -7%;
+  }
+
+  /* line 833, ../scss/media.scss */
+  .prohance-m section.main-banner .middle-img .run-img {
+    max-width: 60px;
+  }
+
+  /* line 836, ../scss/media.scss */
+  section.main-banner .left-text > p {
+    font-size: 1.8rem;
+    line-height: 22px;
+  }
+
+  /* line 840, ../scss/media.scss */
+  section.product-property .left-text .pro-desc {
+    padding-left: 0px;
+  }
+
+  /* line 843, ../scss/media.scss */
+  span[class*="arrow"] {
+    display: none;
+  }
+
+  /* line 846, ../scss/media.scss */
+  section.main-banner .left-text, section.main-banner .right-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 850, ../scss/media.scss */
+  .para-txt, section.product-property .left-text p.para-txt {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+
+  /* line 854, ../scss/media.scss */
+  ul.pro-contents .pro-speciality > img {
+    max-width: 37px;
+    width: 100%;
+  }
+
+  /* line 858, ../scss/media.scss */
+  section.main-banner .middle-img {
+    margin: 20px 0;
+  }
+
+  /* line 861, ../scss/media.scss */
+  section.product-property .right-text .pro-desc {
+    padding: inherit;
+  }
+
+  /* line 864, ../scss/media.scss */
+  ul.pro-contents .pro-speciality p {
+    line-height: 22px;
+    font-size: 1.4rem;
+  }
+
+  /* line 868, ../scss/media.scss */
+  ul.pro-count li {
+    padding: 15px 0;
+  }
+
+  /* line 871, ../scss/media.scss */
+  section.product-property .middle-img .bg-img {
+    max-width: 200px;
+  }
+
+  /* line 874, ../scss/media.scss */
+  .prohance-m section.video-scoop .video-txt {
+    left: 3%;
+    bottom: 20%;
+    max-width: 95%;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    transform: inherit;
+  }
+
+  /* line 880, ../scss/media.scss */
+  section.health .left-text, section.health .middle-img {
+    width: 50%;
+  }
+
+  /* line 883, ../scss/media.scss */
+  section.health .petal5 {
+    display: none;
+  }
+
+  /* line 886, ../scss/media.scss */
+  section.health .middle-img {
+    margin: inherit;
+  }
+
+  /* line 892, ../scss/media.scss */
+  section.recipe-details .recipe-info h3 {
+    font-size: 2rem;
+  }
+
+  /* line 895, ../scss/media.scss */
+  section.recipe-tabs .wrapper {
+    padding: 20px;
+  }
+
+  /* line 899, ../scss/media.scss */
+  section.recipe-tabs .tabs ul li,
+  section.recipe-tabs .tab-method li {
+    font-size: 1.6rem;
+  }
+
+  /* line 902, ../scss/media.scss */
+  section.nutritive-value .wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  /* line 909, ../scss/media.scss */
+  section.recipe-banner {
+    padding-bottom: 140px;
+  }
+
+  /* line 912, ../scss/media.scss */
+  section.recipe-listing .recipe-wrp {
+    margin: 10px 10px 30px 10px;
+  }
+
+  /* line 915, ../scss/media.scss */
+  section.recipe-banner .recipe-txt {
+    top: auto;
+    bottom: -140px;
+    left: 50%;
+    margin-left: -140px;
+  }
+
+  /* line 922, ../scss/media.scss */
+  section.recipe-banner .recipe-txt h1,
+  section.recipe-banner .recipe-txt h1 span:last-child {
+    text-align: left;
+  }
+
+  /* line 925, ../scss/media.scss */
+  section.recipe-banner .recipe-txt h1 span {
+    font-size: 2.7rem;
+  }
+
+  /* line 928, ../scss/media.scss */
+  section.recipe-listing .recipe-wrp .recipe-img p {
+    font-size: 2rem;
+  }
+
+  /* line 931, ../scss/media.scss */
+  section.recipe-banner .recipe-txt .recipe-para {
+    text-align: left;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  /* line 936, ../scss/media.scss */
+  section.recipe-banner .recipe-txt .recipe-para p {
+    font-size: 1.6rem;
+  }
+
+  /* line 939, ../scss/media.scss */
+  section.recipe-banner .bg-img img {
+    width: 100%;
+  }
+
+  /* line 942, ../scss/media.scss */
+  section.recipe-tabs .tabs ul li {
+    margin: 0 15px 0 0;
+  }
+
+  /* line 948, ../scss/media.scss */
+  .inner-product .product-carousel {
+    max-width: 250px;
+  }
+
+  /* line 953, ../scss/media.scss */
+  section.product-tabs .tabs-dropdown,
+  section.product-tabs .tabs ul,
+  section.ingredients .ingredient-wrp h3 {
+    font-size: 2rem;
+  }
+
+  /* line 959, ../scss/media.scss */
+  .pop-contact-wrp .head-txt h2 {
+    font-size: 3rem;
+  }
+
+  /* line 964, ../scss/media.scss */
+  footer .wrapper {
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 971, ../scss/media.scss */
+  .load-wrp input {
+    padding: 10px 15px;
+  }
+
+  /* line 975, ../scss/media.scss */
+  section.recipe-listing .recipe-wrp {
+    margin: 10px 10px 30px 10px;
+  }
+
+  /* line 978, ../scss/media.scss */
+  section.recipe-listing .recipe-wrp .recipe-img p {
+    font-size: 2rem;
+  }
+
+  /* line 983, ../scss/media.scss */
+  footer ul li {
+    padding: 0 4px;
+  }
+}

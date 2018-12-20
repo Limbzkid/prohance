@@ -1,0 +1,240 @@
+<!-- Popup contact us Address Starts -->
+<div class="overlay-contact"></div>
+<div class="pop-contact-wrp">
+	<div class="head-txt">
+		<h2>Address</h2>
+		<span class="cross-sign">?</span>
+	</div>
+	<div class="wrapper">
+		{{ page.message }}
+	</div>  
+</div>
+<!-- Popup contact us Address Ends -->
+<header>
+	<div class="container-flow">
+		<div class="wrapper flex-wrp">
+			<div class="pro-logo">
+				<a href="/"><img src="{{ file_url(node.field_product_logo.entity.field_logo_image.entity.uri.value) }}" alt="prohance-logo"></a>
+			</div>
+			<div class="mob-menu">
+				<span></span>
+			</div>
+			<nav>
+				<ul class="flex-wrp main-menu">
+					{{ page.menu_left }}
+					{{ page.menu_right }}
+				</ul>   
+			</nav>
+		</div>
+	</div>
+</header>
+
+<main>
+  <!-- Section inner-product Starts -->
+	{% if node.title.value == 'Prohance D' %}
+		<section class="inner-product">
+	{% endif %}
+	{% if node.title.value == 'Prohance Mom' %}
+		<section class="inner-product voilet">
+	{% endif %}
+	{% if node.title.value == 'Prohance C' %}
+		<section class="inner-product green">
+	{% endif %}
+	
+		<div class="container">
+			<div class="wrapper flex-wrp">
+				<div class="product-showcase pro-cart flex-wrp">
+					<div class="product-carousel owl-carousel">
+						{% set count = 1 %}
+						{% for item in node.field_product_variant %}
+							<div class="pro-slides">
+								<img src="{{ file_url(item.entity.field_product_image.entity.uri.value)}}" alt="product" data-img="img-{{ count }}">
+								<p class="para-txt">{{ item.entity.field_flavor.entity.name.value }}</p>
+							</div>
+							{% set count = count + 1 %}
+						{% endfor %}
+					</div>
+					<div class="product-buy flex-wrp">
+						<div class="product-wrp flex-wrp">
+							<div class="bg-img">
+								{% if node.title.value == 'Prohance Mom'%}
+									<img src="/{{ directory }}/images/prohanceM/voilet-patch.png" alt="bg-img">
+								{% endif %}
+								{% if node.title.value == 'Prohance D'%}
+									<img src="/{{ directory }}/images/prohanceD/blue-patch.png" alt="bg-img">
+								{% endif %}
+								{% if node.title.value == 'Prohance C'%}
+									<img src="/{{ directory }}/images/prohanceC/green-patch.png" alt="bg-img">
+								{% endif %}
+							</div>
+							<div class="product-img">
+								{% set count = 1 %}
+								{% for image in node.field_product_variant %}
+									{% if count == 1 %}
+										<img src="{{ file_url(image.entity.field_product_image.entity.uri.value)}}" alt="product-img" id="img-{{ count}}" class="prod-img img-{{ count }} active">
+									{% else %}
+										<img src="{{ file_url(image.entity.field_product_image.entity.uri.value)}}" alt="product-img" id="img-{{ count}}" class="prod-img img-{{ count }}">
+									{% endif %}
+									{% set count = count + 1 %}
+								{% endfor %}
+							</div>
+						</div>
+						<div class="buy-btn">
+							{% for item in node.field_product_variant %}
+								<p>{{ node.title.value }} {{ item.entity.field_flavor.entity.name.value }}</p>
+								<a href="{{ item.field_buy_.value }}" target="_blank"><button type="button" class="exp-btn">Buy Now</button></a>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="pro-cart">
+					{% set count = 1 %}
+					{% for data in node.field_product_variant %}
+						{% if count == 1 %}
+							<div class="product-desc img-{{ count }} active">
+						{% else %}
+							<div class="product-desc img-{{ count }}">
+						{% endif %}
+							<div class="head-txt">
+								<h2>About {{ node.title.value}}</h2>
+							</div>
+							<div class="pro-desc">
+								{{ data.entity.field_product_description.value | raw }}
+							</div>
+							<div class="highlight">
+								<p>PRODUCT HIGHLIGHT</p>
+								<ul class="pro-count owl-carousel">
+									{% for item in data.entity.field_product_highlights %}
+										<li>
+											<p><span class="cour-txt">{{ item.entity.field_value.value }}</span> {{ item.entity.field_unit.value }}</p>
+											<p class="reg-txt">{{ item.entity.field_text.value }}</p>
+										</li>
+									{% endfor %}
+								</ul>
+								<a href="{{ file_url(data.entity.field_product_chart.entity.uri.value) }}" target="_blank"><button type="button" class="exp-btn view-btn">View Chart</button></a>
+							</div>
+						</div>
+						{% set count = count + 1 %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>        
+	<!-- Section inner-product Ends -->
+
+
+	<!-- Section product-tabs Starts -->
+	<section class="product-tabs">
+		<div class="container">
+			<div class="wrapper">
+				<div class="tabs-dropdown">Why Choose Prohance</div>
+				<div class="tabs">
+					<ul class="flex-wrp">
+						{% for item in node.field_product_tab %}
+							<li>{{ item.entity.field_title.value }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="tab-desc flex-wrp">
+					{% for data in node.field_product_tab %}
+						<div class="tab-info">
+							{{ data.entity.field_description.value | raw }}
+						</div>
+					{% endfor %}
+					<div class="tab-info-img">
+						<div class="middle-img">
+							<div class="run-img model-img">
+								<img src="{{ file_url(node.	field_model_image.entity.uri.value) }}" alt="run">
+							</div>
+							<div class="bg-img">
+								<img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="blue-patch">
+								<img src="{{ file_url(node.field_product_variant.entity.field_product_image.0.entity.uri.value) }}" alt="product" class="img-absolute">
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section product-tabs Ends -->
+	<!-- Section ingredients Starts -->
+	<section class="ingredients">
+		<div class="container">
+			<div class="wrapper">
+				<div class="head-txt">
+					<h2><span>Ingredients</span> <br>& their advantages</h2>
+				</div>
+				<div class="advantages-info owl-carousel">
+					{% for data in node.field_product_variant %}
+						{% for item in data.entity.field_ingredients %}
+							<div class="advantage-slides flex-wrp">
+								<div class="adv-description">
+									<div class="ingredient-wrp">
+										<h3>{{ item.entity.field_title.value }}</h3>
+										{{ item.entity.field_description.value | raw }}
+									</div>
+									<div class="adv-wrp">
+										<h3>Advantages</h3>
+										{{ item.entity.field_advantages.value | raw }}
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section ingredients Ends -->
+
+  <section class="faq">
+    <div class="container">
+      <div class="wrapper">
+        <div class="head-txt"><h2>FAQ's</h2></div>
+        <ul class="question-wrp">
+          {{ page.footer_top }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="overlay"></div>
+  <div class="pop-wrp">
+    <div class="head-txt">
+      <h2>View Chart</h2>
+      <span class="cross-sign">?</span>
+    </div>
+    {% for chart in node.field_product_variant %}
+      <div class="wrapper {{ chart.entity.field_flavor.entity.name.value }}">
+        <p class="para-txt">{{ chart.entity.field_flavor.entity.name.value }}</p>
+        {{ chart.entity.field_product_chart.value | raw }}
+      </div>
+    {% endfor %}
+  </div>
+  
+</main>
+
+<footer>
+	<div class="container-flow">
+		<div class="wrapper flex-wrp">
+			<div class="copy flex-wrp">
+				<p class="copyright">Copyright &copy; Sun Pharmaceutical Industries Ltd. </p>
+				<ul class="flex-wrp">
+					{{ page.footer }}
+				</ul>
+			</div>
+			<div class="subs-wrp">
+				<ul class="flex-wrp">
+					<li><a href="javascript:;">subscribe</a></li>
+					<li><a href="javascript:;">unbscribe</a></li>
+				</ul>
+			</div>
+			<div class="social-wrp">
+				<ul class="flex-wrp">
+					<li><a href="https://www.facebook.com/Sun-Pharma-170795602978664/" target="_blank"><img src="/{{ directory }}/images/fb.png" alt="fb"></a></li>
+					<li><a href="https://twitter.com/SunPharma_live" target="_blank"><img src="/{{ directory }}/images/tw.png" alt="tw"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCdkyfWmDFAaUA5P8GD_LVdQ" target="_blank"><img src="/{{ directory }}/images/yt.png" alt="yt"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

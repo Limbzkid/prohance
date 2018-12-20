@@ -1,0 +1,7 @@
+{% for data in content['#data_obj'] %}
+	{% if data.title == 'Contact Us' %} 
+		<li><a href="javascript:;" class="contact-btn">{{ data.title }} </a></li>
+	{% else %}
+		<li><a href="{{ data.link }}">{{ data.title }} </a></li>
+	{% endif %}
+{% endfor %}

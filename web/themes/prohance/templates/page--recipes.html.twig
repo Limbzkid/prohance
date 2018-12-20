@@ -1,0 +1,123 @@
+<header>
+	<div class="container-flow">
+		<div class="wrapper flex-wrp">
+			<div class="pro-logo">{{ page.logo }}</div>
+			<div class="mob-menu">
+				<span></span>
+			</div>
+			<nav>
+				<ul class="flex-wrp main-menu">
+					{{ page.menu_left }}
+					{{ page.menu_right }}
+				</ul>   
+			</nav>
+		</div>
+	</div>
+</header>
+
+<main>
+	<!-- Section recipe-details Starts -->
+	{{ page.footer_top }}
+	<section class="recipe-details">
+		<div class="container">
+			<div class="wrapper flex-wrp">
+				<div class="recipe-info">
+					<div class="recipe-img">
+						<img src="{{ file_url(node.field_recipe_image.entity.uri.value) }}" alt="recipe-details">
+					</div>
+				</div>
+				<div class="recipe-info">
+					<h3>{{ node.title.value }}</h3>
+					<div class="recipe-para">
+						{{ node.body.value | raw }}
+					</div>
+					<div class="level-wrp">
+						<div class="serve-wrp flex-wrp">
+							<p>Serves : <span>{{ node.field_servings.value }}</span></p>
+							<p>Time : <span>{{ node.field_time_in_minutes.value }}</span></p>
+						</div>
+						<p>Difficulty Level : <span>{{ node.field_tags.entity.name.value }}</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section recipe-details Ends -->
+
+
+	<!-- Section recipe-tabs Starts -->
+	<section class="product-tabs recipe-tabs">
+		<div class="container">
+			<div class="wrapper">
+				<div class="tabs">
+					<ul class="flex-wrp">
+						<li class="active">ingredients</li>
+						<li>methods</li>
+					</ul>
+				</div>
+				<div class="tab-desc flex-wrp">
+					<div class="tab-info">
+						{{ node.field_ingedrients.value | raw }}
+					</div>
+					<div class="tab-info" style="display: none;">
+						{{ node.field_methods.value | raw }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section recipe-tabs Ends -->
+
+
+	<!-- Section nutritive-value Starts -->
+	<section class="nutritive-value">
+		<div class="container">
+			<div class="wrapper">
+				<h2>Nutritive value per serving</h2>
+				<div class="table-wrp">
+					{{ node.field_nutritive_value.value | raw }}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section nutritive-value Ends -->
+	
+	<!-- Popup contact us Address Starts -->
+	<div class="overlay-contact"></div>
+	<div class="pop-contact-wrp">
+		<div class="head-txt">
+			<h2>Address</h2>
+			<span class="cross-sign">?</span>
+		</div>
+		<div class="wrapper">
+			<p>Lorem Ipsum has been the industry's standard dummy text ever since. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+		</div>  
+	</div>
+	<!-- Popup contact us Address Ends -->
+
+</main>
+<footer>
+	<div class="container-flow">
+		<div class="wrapper flex-wrp">
+			<div class="copy flex-wrp">
+				<p class="copyright">Copyright &copy; Sun Pharmaceutical Industries Ltd. </p>
+				<ul class="flex-wrp">
+					{{ page.footer }}
+				</ul>
+			</div>
+			<div class="subs-wrp">
+				<ul class="flex-wrp">
+					<li><a href="javascript:;">subscribe</a></li>
+					<li><a href="javascript:;">unbscribe</a></li>
+				</ul>
+			</div>
+			<div class="social-wrp">
+				<ul class="flex-wrp">
+					<li><img src="/{{ directory }}/images/fb.png" alt="fb"></li>
+					<li><img src="/{{ directory }}/images/tw.png" alt="tw"></li>
+					<li><img src="/{{ directory }}/images/yt.png" alt="yt"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
